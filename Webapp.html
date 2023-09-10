@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebToon</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+            background-color: green;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: left;
+        }
+        .logo img {
+            width: 180px;
+            border-radius: 50px;
+        }
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+        .nav-list li a:hover {
+            color: rgb(84, 84, 84);
+        }
+        .rightnav {
+            width: 30%;
+            text-align: right;
+        }
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+        .context{
+            display: flex;
+            position: fixed;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+        .row {margin: 0 -5px;}
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+@media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+}
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+        .card2 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <center><b><h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Web Toon</h1></b></center>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <div class="logo">
+                <a href="Webapp.html"><img src= "https://i.pinimg.com/564x/c4/af/ed/c4afed0821e8ea9b447b71a92c33c3af.jpg" alt="Pitcure file" width=300 height=200></a>
+            </div>
+            <li><a href="Genres.html">GENRES</a></li>
+            <li><a href="About.html">ABOUT US</a></li>
+            <li><a href="Login.html">LOG IN</a></li>
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+        <hr>
+        <div id="container">
+        <div id="content">
+        <center><h1>Top WebToon</h1></center>
+        <div class="main" id="mainBannerList" style="background:url(https://webtoons-static.pstatic.net/image/pc/home_bg004.jpg) no-repeat 50% 0;background-size:cover">
+            <div class="_largeBanner">
+                <center><a href="https://www.webtoons.com/en/romance/truebeauty/list?title_no=1436"><img src="https://publishingperspectives.com/wp-content/uploads/2021/11/True-Beauity-logoworkup-Webtoon-Wattpad-ftw-710x444.jpg" style="size:cover;"></a></center>
+        </div>
+        </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <section class="Context">
+            <div class="row">
+                <div class="column">
+                <div class="card">
+                    <a href="https://www.webtoons.com/en/romance/marry-my-husband/list?title_no=4572"><img src="https://www.ksociety.fr/wp-content/uploads/2023/03/marrymuhusband-1024x932.jpg" alt="Marry my Hushband" style="width:50%"></a>
+                    <h4><b>Marry my Hushband</b></h4>
+                    <p> To marry off her now former best<br>friend to her lying, cheating husband.</p>
+                </div>
+                </div>
+                <div class="column">
+                <div class="card">
+                    <a href="https://www.webtoons.com/en/drama/daytime-star/list?title_no=3908"><img src="https://swebtoon-phinf.pstatic.net/20211020_69/1634694900060rDh2N_JPEG/2M_details.jpg?type=crop540_540" alt="Daytime Star" style="width:50%"></a>
+                    <h4><b>DayTime Star</b></h4>
+                    <p>Will Seunghyeon figure out why he can’t<br> get Yura out of his mind? Only time will tell.</p>
+                </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <a href="https://www.webtoons.com/en/romance/to-love-your-enemy/list?title_no=2114"><img src="https://i.pinimg.com/736x/e3/07/6a/e3076a52fb2d043967f232979bffa879.jpg" alt="To Love Your Enemy" style="width:50%"></a>
+                        <h4><b>To Love Your Enemy</b></h4>
+                        <p>Amidst college gossip, crushes, and jealousy,<br>can the two embrace each other for who they really are?</p>
+                </div>
+                </div>
+                <div class="column">
+                <div class="card">
+                    <a href="https://www.webtoons.com/en/horror/attention-residents/list?title_no=5479"><img src="https://swebtoon-phinf.pstatic.net/20230727_29/1690400524060rMoWj_JPEG/2AttentionResidents_landingpage_mobile.jpg?type=crop540_540" alt="Attention Residents" style="width:50%"></a>
+                    <h4><b>Attention Residents</b></h4>
+                    <p>The tenants struggle to fight for their lives,<br> but some of them seem to have deadly secrets of their own...</p>
+                </div>
+                </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section class="Context">
+            <div class="row">
+                <div class="column">
+                <div class="card2">
+                    <a href="https://www.webtoons.com/en/romance/lovers-of-the-galaxy/list?title_no=5417"><img src="https://swebtoon-phinf.pstatic.net/20230725_144/1690258775843cHbPK_JPEG/8Series_landingpage_mobile.jpg?type=crop540_540" alt="Lovers of the Galaxy" style="width:50%"></a>
+                    <h4><b>Lovers of the Galaxy</b></h4>
+                    <p>Story of exciting romance with the student body<br> president Huimun, who has a secret of his own.</p>
+                </div>
+                </div>
+                <div class="column">
+                <div class="card2">
+                    <a href="https://www.webtoons.com/en/romance/perfect-marriage-revenge/list?title_no=3484"><img src="https://static.wikia.nocookie.net/webtoon/images/2/23/Perfect_Marriage_Revenge.jpg/revision/latest?cb=20220121111014&path-prefix=id" alt="Perfect Marriage Revenge" style="width:50%"></a>
+                    <h4><b>Perfect Marriage Revenge</b></h4>
+                    <p>Given a second chance at life, Iju vows revenge,<br> determined to take back all that she’s lost.</p>
+                </div>
+                </div>
+                <div class="column">
+                <div class="card2">
+                        <a href="https://www.webtoons.com/en/romance/bitten-contract/list?title_no=3689"><img src="https://swebtoon-phinf.pstatic.net/20211210_137/1639086824957e514o_JPEG/3BittenContract_landingpage_mobile.jpg?type=crop540_540" alt="Bitten Contract" style="width:50%"></a>
+                        <h4><b>Bitten Contract</b></h4>
+                        <p>she asks him to continue biting her, but Ijun<br>offers a contractual relationship instead. What is his motive? Will Chae-i find relief?</p>
+                </div>
+                </div>
+                <div class="column">
+                <div class="card2">
+                    <a href="https://www.webtoons.com/en/fantasy/i-was-the-final-boss/list?title_no=5170"><img src="https://swebtoon-phinf.pstatic.net/20230310_44/1678397426495505to_JPEG/6IWastheFinalBoss_landingpage_mobile.jpg?type=crop540_540" alt="I Was the final Boss" style="width:50%"></a>
+                    <h4><b>I Was the final Boss</b></h4>
+                    <p>Strongest Hunter realizes that his true wish is to be just like the humans & he is granted his wish, as he awakens as a human – without his powers!</p>
+                </div>
+                </div>
+        </section>
+        <footer class="background">
+            <p class="text-footer">
+            Copyright ©-All rights are reserved
+            </p>
+        </footer>
+</body>
+</html>
